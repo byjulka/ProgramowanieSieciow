@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace laboratorium_Hello_World
 {
-    internal class Program
+    internal class KontrolaParzystosci
     {
         public static void Main(string[] args)
         {
