@@ -16,7 +16,8 @@ namespace laboratorium_Hello_World
 
             foreach (int var in slowo)
             {
-                Console.Write(var + "\n");
+                char c = Convert.ToChar(var);
+                Console.Write(c +" -> " + var + "\n");
             }
 
             Console.WriteLine("\nCRC:");
