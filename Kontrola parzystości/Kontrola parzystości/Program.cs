@@ -2,6 +2,8 @@
 using System;
 using System.Linq;
 
+
+
 namespace laboratorium_Hello_World
 {
     internal class KontrolaParzystosci
@@ -20,13 +22,13 @@ namespace laboratorium_Hello_World
                 Console.Write(c +" -> " + var + "\n");
             }
 
-            Console.WriteLine("\nCRC:");
+            Console.WriteLine("\nbit parzystosci:");
             foreach (int var in slowo)
             {
                 for (int i = 0; i < 8; i++)
                 {
                     x = (var >> i) & 1;
-                    suma = suma ^ x;
+                    suma ^= x;
                 }
             }
             Console.Write(suma);
